@@ -1,0 +1,39 @@
+.exercise-table {
+    display: inline-block;
+	width: 70%;
+	height: 700px;
+	margin: auto auto;
+	float: right;
+	padding: 20px;
+	border: 4px solid green;
+}
+
+.sheet-music {
+    width: 100%;
+/*    border: 5px solid red;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sheet-music img {
+    max-width: 100%;
+}
+
+.slow-audio {
+    display: inline-block;
+    width: 49%;
+/*    border-right: 3px solid #dcd09e;*/
+    margin-right: 1px;
+    margin-bottom: 80px;
+    float: left;
+    text-align: center;
+}
+
+.fast-audio {
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+/*    border-left: 3px solid #dcd09e;*/
+    margin-left: 1px;
+    margin-bottom: 80px;
+}

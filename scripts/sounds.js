@@ -9,9 +9,15 @@ var audioPlayer = function() {
     
 }
 
+var table = document.getElementById("exercise-table");
+
+var addBorder = function() {
+    console.log("test");
+    
+    table.style.border = 4px solid red;
+}
+
+
 document.getElementById("hero").addEventListener("click", addBorder);
 
 
-var addBorder = function(event) {
-    console.log("test");
-}

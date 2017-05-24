@@ -27,9 +27,9 @@
                     </tr>
                     <tr>
                         <td><a href="some-more-warmups.html">Some More Warm Ups</a></td>
-                    </tr>
+<!--                    </tr>-->
                     <tr>
-                        <td><a href="enough-warmups.html"> With the Warm Ups Already</a></td>
+                        <td><a href="enough-warmups.html">With the Warm Ups Already</a></td>
                     </tr>
                     <tr>
                         <td><a href="what-more-warmups.html">What?? More Warm Ups</a></td>
@@ -40,26 +40,29 @@
                 </table>
             </nav>
         </div>    
-		<section id="exercise-table" class="exercise-table">
-			<section class="sheet-music">
+		<section class="exercise-table">
+			<div class="sheet-music">
                 <img src="assets/images/sheet-music/Exercise-1.jpg" alt="exercise 1">
-            </section>
-            <div class="slow-audio">
-                <h3>&#9833 = 88 <span class="test">test</span><button onclick="testFunction()">Click</button></h3>
+            </div>
+            <div class="audio slow-audio" data-track-name="1-1-a.mp3" data-click-name="click-88.mp3">
+                <p>&#9833 = 88<span class="ion-play"></span></p>
+<!--
+				<audio controls="controls" src="assets/audio/drums/1-1-a.mp3"></audio>
+                <span class=ion-play></span>
+-->
+            </div>
+            <div class="audio fast-audio" data-track-name="1-1-b.mp3" data-click-name="click-105.mp3">
+                <p>&#9833 = 105<span class="ion-play"></span></p>
+            </div>
+            <div class="sheet-music">
+                <img src="assets/images/sheet-music/Exercise-1.jpg" alt="exercise 1">
+            </div>
+            <div class="audio slow-audio">
+                <p>&#9833 = 88<span class="ion-play"></span></p>
 <!--                <span class=ion-play></span>-->
             </div>
-            <div class="fast-audio">
-                <h3>&#9833 = 105</h3>
-            </div>
-            <section class="sheet-music">
-                <img src="assets/images/sheet-music/Exercise-1.jpg" alt="exercise 1">
-            </section>
-            <div class="slow-audio">
-                <h3>&#9833 = 88</h3>
-<!--                <span class=ion-play></span>-->
-            </div>
-            <div class="fast-audio">
-                <h3>&#9833 = 105</h3>
+            <div class="audio fast-audio">
+                <p>&#9833 = 105<span class="ion-play"></span></p>
             </div>
 		</section>
         

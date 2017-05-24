@@ -5,7 +5,6 @@
 	margin: auto auto;
 	float: right;
 	padding: 20px;
-	border: 4px solid green;
 }
 
 .sheet-music {
@@ -36,4 +35,21 @@
 /*    border-left: 3px solid #dcd09e;*/
     margin-left: 1px;
     margin-bottom: 80px;
+}
+
+.exercise-table p {
+	font-size: 1.5rem;
+	font-weight: 300;
+}
+
+.ion-play {
+	color: #37354c;
+	margin-left: 20px;
+ 	background-color: #dcd09e;
+	width: 30px;
+	height: 30px;
+	padding-top: 3px;
+	padding-left: 2px;
+    border-radius: 50% 50%;
+    display: inline-block;
 }

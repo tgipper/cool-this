@@ -20,15 +20,47 @@ body {
 }
 
 .hero-content {
-    background-image: url(../assets/images/cover-image-crop-2.jpg);
+    background-image: url(../assets/images/cover-img.png);
 	position: relative;
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-	padding-top: 80px;
-	padding-bottom: 80px;
+/*	padding-top: 80px;*/
+/*	padding-bottom: 80px;*/
 	margin: 0px;
 }
+
+h1 {
+	font-size: 5rem;
+	letter-spacing: 15px;
+	text-align: right;
+	padding-right: 8%;
+	padding-top: 10px;
+	font-weight: 500;
+	text-shadow: 5px 5px 10px #000000;
+	margin: 0px;
+}
+
+h2 {
+	font-size: 5rem;
+	font-style: italic;
+	letter-spacing: 15px;
+	text-align: right;
+	padding-right: 8%;
+	padding-top: 0px;
+	margin: 0px;
+	padding-bottom: 10%;
+	font-weight: 500;
+	text-shadow: 5px 5px 10px #000000;
+}
+
+h3 {
+	display: inline-block;
+	float: right;
+	text-align: right;
+	
+}
+
 .navbar {
 	font-size: 1.3rem;
 	text-decoration: none;
@@ -48,9 +80,19 @@ body {
 	display: inline-block;
 	width: 70%;
 	height: 700px;
+	float: right;
+	padding-top: 100px;
+	border: none;
+}
+
+.legend {
+	display: inline-block;
+	width: 70%;
+	padding-left: 80px;
+	padding-right: 80px;
 	margin: auto auto;
 	float: right;
-	padding: 100px 0px;
+/*	padding: 100px 0px;*/
 	border: none;
 }
 

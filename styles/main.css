@@ -54,13 +54,6 @@ h2 {
 	text-shadow: 5px 5px 10px #000000;
 }
 
-h3 {
-	display: inline-block;
-	float: right;
-	text-align: right;
-	
-}
-
 .navbar {
 	font-size: 1.3rem;
 	text-decoration: none;
@@ -79,10 +72,22 @@ h3 {
 .opening-video {
 	display: inline-block;
 	width: 70%;
-	height: 700px;
+/*	height: 300px;*/
 	float: right;
 	padding-top: 100px;
 	border: none;
+}
+
+h3 {
+	display: block;
+    clear: both;
+}
+
+.legend-title {
+    width: 70%;
+    float: right;
+    text-align: center;
+    font-size: 1.8rem;
 }
 
 .legend {
@@ -90,10 +95,12 @@ h3 {
 	width: 70%;
 	padding-left: 80px;
 	padding-right: 80px;
+    padding-bottom: 40px;
 	margin: auto auto;
 	float: right;
 /*	padding: 100px 0px;*/
 	border: none;
+    clear: both;
 }
 
 .opening-video iframe {

@@ -1,15 +1,20 @@
 .exercise-table {
     display: inline-block;
 	width: 70%;
-	height: 700px;
+/*	height: 700px;*/
 	margin: auto auto;
 	float: right;
 	padding: 20px;
 }
 
+.title {
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 5px; 
+}
+
 .sheet-music {
     width: 100%;
-/*    border: 5px solid red;*/
     margin-left: auto;
     margin-right: auto;
 }

@@ -7,32 +7,29 @@ for ( var i = 0; i < playButtons.length; i++) {
 var currentlyPlaying = null;
 
 function playTrack() {
-    var clickPath = "../assets/audio/clicks/";
-    var clickName = this.dataset.clickName;
+    
+    var countPath = "../assets/audio/clicks/";
+    var countName = this.dataset.countName;
     var trackPath = "../assets/audio/drums/";
     var trackName = this.dataset.trackName;
 
-    clickPath = clickPath + clickName;
+    countPath = countPath + countName;
 
     trackPath = trackPath + trackName;
 
-    var click = new Audio(clickPath);
+    var count = new Audio(countPath);
     var track = new Audio(trackPath);
-
-    click.play();
-
-    if (click.played.end == click.duration) {
-        console.log(click.duration);
-    }
+    count.preload = "auto";
+    count.volume = 0.5;
+    track.preload = "auto";
+    track.volume = 1.0;
+    track.loop = true;
     
-    //check click duration
-    //check click current time
-    //if click currentTime == duation, play track
-    //check track duration
-    //check track current time
-    //if track currentTime == duration, play track
-    track.play();
-    console.log("test");	
+//    if count.isPlaying
+    
+    count.addEventListener("ended", () => track.play());
+    count.play();
+    
 }
 
 //if nothing is playing and a button is clicked, play the sounds for that button

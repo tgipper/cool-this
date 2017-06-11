@@ -30,7 +30,7 @@ body {
 	margin: 0px;
 }
 
-h1 {
+#name {
 	font-size: 5rem;
 	letter-spacing: 15px;
 	text-align: right;
@@ -41,7 +41,7 @@ h1 {
 	margin: 0px;
 }
 
-h2 {
+#title {
 	font-size: 5rem;
 	font-style: italic;
 	letter-spacing: 15px;
@@ -61,6 +61,7 @@ h2 {
 	letter-spacing: 1px;
 	border-right: 5px solid #dcd09e;
 	height: 100%;
+	width: 300px;
 	position: relative;
 	overflow: auto;
 	background-color: #47455c;
@@ -76,38 +77,41 @@ h2 {
 	margin-top: 20px;
 }
 
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .opening-video {
-	display: inline-block;
-	width: 70%;
-/*	height: 300px;*/
-	float: right;
 	padding-top: 100px;
 	border: none;
 }
 
+/*
 h3 {
 	display: block;
     clear: both;
 }
+*/
 
 .legend-title {
-    width: 70%;
-    float: right;
+	padding-top: 100px;
+	padding-bottom: 20px;
+	font-weight: 300;
     text-align: center;
     font-size: 1.8rem;
+	margin: 0;
 }
 
 .legend {
 	display: inline-block;
-	width: 70%;
+	max-width: 100%;
 	padding-left: 80px;
 	padding-right: 80px;
     padding-bottom: 40px;
 	margin: auto auto;
-	float: right;
-/*	padding: 100px 0px;*/
-	border: none;
-    clear: both;
+
 }
 
 .opening-video iframe {

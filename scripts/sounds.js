@@ -1,51 +1,63 @@
 var playButtons = document.getElementsByClassName("audio");
 
 for ( var i = 0; i < playButtons.length; i++) {
-	playButtons[i].addEventListener("click", playback);
+	playButtons[i].addEventListener("click", playLoop);
 }
 
 var currentlyPlaying = null;
+var loop;
+var loopPath = "../assets/audio/drums/";
 
-function playback() {
-    // target the icon span
-	// toggle the class to show a stop button
-    var countPath = "../assets/audio/counts/";
-    var countName = this.dataset.countName;
-    var trackPath = "../assets/audio/drums/";
-    var trackName = this.dataset.trackName;
+var songPlayer = {
+	play: function(loopName) {
+		var fullPath = loopPath + loopName;
+		loop = new buzz.sound(fullPath, { volume: 50 });
+		currentlyPlaying = loopName;
+		loop.play();
+	},
+	pause: function() {
+		currentlyPlaying = null;
+		loop.stop();	
+	}
+}
 
-    countPath = countPath + countName;
+function toggleIcon(id) {
+	var icon = document.getElementById(id);
+	icon.classList.toggle("ion-play");
+	icon.classList.toggle("ion-pause");
+}
 
-    trackPath = trackPath + trackName;
-
-    var count = new Audio(countPath);
-    var track = new Audio(trackPath);
-    count.preload = "auto";
-    count.volume = 0.5;
-    track.preload = "auto";
-    track.volume = 1.0;
-    track.loop = true;
+function playLoop() {
+	toggleIcon(this.dataset.target);
+		
+	var loopName = this.dataset.loopName;
 	
-//	if (nothing is playing) {
-//		currentlyPlaying = trackName;
-//		//track.play();
-//	}
 	
-	if (currentlyPlaying == trackName) {
+	//if nothing is playing
+	if (currentlyPlaying == null) {
+		songPlayer.play(loopName);
+	}
+	
+	//if the currently playing track is clicked
+	else if (currentlyPlaying == loopName) {
+		songPlayer.pause();
+	}
+
+	//if a track other than the currently playing track is clicked
+	else if (currentlyPlaying != null && currentlyPlaying != loopName) {
+		var el = document.querySelector("[data-loop-name='" + currentlyPlaying + "']");
+		toggleIcon(el.dataset.target);
+		songPlayer.pause();
+
+		songPlayer.play(loopName);
+		
 		
 	}
 	
-	
-    
-    count.addEventListener("ended", () => track.play());
-    count.play();
-    
 }
 
-//if nothing is playing and a button is clicked, play the sounds for that button
-//if a sound file is playing and the button for that sound file is clicked, stop the sound file
-//if a sound file is playing and a button not corresponding to that button is clicked, stop the previous sound file and play the sound file for the clicked button
+// toggling play and pause must be dependent on a track playing; when a track is finished playing the pause button needs to revert to a play button.
 
-// 1. Playback solution research (long audio file, server-side audio file generation, buffering tricks)
-// 2. Playback flow for pausing/stopping/playing new tracks (consider jquery and buzz)
-// 3. CSS details
+// frontend scripting – we've already done this, but frontend scripting is fragile
+// Jekyll (plain text data files + templates) – simple, reliable, but new technology and limitations on adding new platforms/features later
+// full custom backend with database – extremely flexible and full featured, but very difficult to learn everything we'll need to build it

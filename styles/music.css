@@ -58,3 +58,15 @@
     border-radius: 50% 50%;
     display: inline-block;
 }
+
+.ion-pause {
+	color: #37354c;
+	margin-left: 20px;
+ 	background-color: #dcd09e;
+	width: 30px;
+	height: 30px;
+	padding-top: 3px;
+/*	padding-left: 2px;*/
+    border-radius: 50% 50%;
+    display: inline-block;
+}

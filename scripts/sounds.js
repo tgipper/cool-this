@@ -24,7 +24,7 @@ var songPlayer = {
 function toggleIcon(id) {
 	var icon = document.getElementById(id);
 	icon.classList.toggle("ion-play");
-	icon.classList.toggle("ion-pause");
+	icon.classList.toggle("ion-stop");
 }
 
 function playLoop() {

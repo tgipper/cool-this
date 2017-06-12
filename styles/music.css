@@ -10,7 +10,9 @@
     color: black;
     text-align: center;
     font-size: 2rem;
-    letter-spacing: 5px; 
+    letter-spacing: 5px;
+	margin-top: 1rem;
+	margin-bottom: 3rem;
 }
 
 .sheet-music {
@@ -29,7 +31,6 @@
     color: black;
     display: inline-block;
     width: 49%;
-/*    border-right: 3px solid #dcd09e;*/
     margin-right: 1px;
     margin-bottom: 80px;
     float: left;
@@ -41,7 +42,6 @@
     display: inline-block;
     width: 49%;
     text-align: center;
-/*    border-left: 3px solid #dcd09e;*/
     margin-left: 1px;
     margin-bottom: 80px;
 }
@@ -52,25 +52,26 @@
 }
 
 .ion-play {
-	color: black;
+	color: #04724d;
 	margin-left: 20px;
  	background-color: #dcd09e;
 	width: 30px;
 	height: 30px;
-	padding-top: 3px;
+	padding-top: 1px;
 	padding-left: 2px;
     border-radius: 50% 50%;
     display: inline-block;
 }
 
-.ion-pause {
-	color: #37354c;
+.ion-stop {
+	font-size: 8px;
+	vertical-align: 
+	color: #04724d;
 	margin-left: 20px;
  	background-color: #dcd09e;
 	width: 30px;
 	height: 30px;
-	padding-top: 3px;
-/*	padding-left: 2px;*/
-    border-radius: 50% 50%;
+	padding-top: 1px;
+	border-radius: 50% 50%;
     display: inline-block;
 }

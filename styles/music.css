@@ -1,13 +1,13 @@
 .exercise-table {
     display: inline-block;
 	width: 70%;
-/*	height: 700px;*/
 	margin: auto auto;
 	float: right;
 	padding: 20px;
 }
 
 .title {
+    color: black;
     text-align: center;
     font-size: 2rem;
     letter-spacing: 5px; 
@@ -17,6 +17,8 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 50px;
+    border-top: 2px solid #dcd09e;
 }
 
 .sheet-music img {
@@ -24,6 +26,7 @@
 }
 
 .slow-audio {
+    color: black;
     display: inline-block;
     width: 49%;
 /*    border-right: 3px solid #dcd09e;*/
@@ -34,6 +37,7 @@
 }
 
 .fast-audio {
+    color: black;
     display: inline-block;
     width: 49%;
     text-align: center;
@@ -48,7 +52,7 @@
 }
 
 .ion-play {
-	color: #37354c;
+	color: black;
 	margin-left: 20px;
  	background-color: #dcd09e;
 	width: 30px;

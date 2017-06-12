@@ -3,16 +3,11 @@
 }
 
 body.landing {
-	background-color: #37354c;
-/*
-	background-image: url(../assets/images/Blue-textured-background.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-*/
+    background-color: white;
 }
 
 body {
-    font-family: 'Times New Roman';
+    font-family: "Verdana";
     color: #dcd09e;
     min-height: 100%;
 	margin: 0;
@@ -36,7 +31,7 @@ body {
 	text-align: right;
 	padding-right: 8%;
 	padding-top: 10px;
-	font-weight: 500;
+	font-weight: 600;
 	text-shadow: 5px 5px 10px #000000;
 	margin: 0px;
 }
@@ -50,31 +45,32 @@ body {
 	padding-top: 0px;
 	margin: 0px;
 	padding-bottom: 10%;
-	font-weight: 500;
+	font-weight: 300;
 	text-shadow: 5px 5px 10px #000000;
 }
 
 .navbar-list {
 	list-style: none;
-	font-size: 1.3rem;
+	font-size: 1.0rem;
 	text-decoration: none;
-	letter-spacing: 1px;
 	border-right: 5px solid #dcd09e;
 	height: 100%;
 	width: 300px;
 	position: relative;
 	overflow: auto;
-	background-color: #47455c;
+	background-color: #56876d;
 	margin: 0;
 	padding: 0px 10px;
 }
 
 .navbar-list li {
-	text-align: center;
+    color: white;
+	text-align: left;
 	border-bottom: 2px solid #dcd09e;
 	height: 70px;
-	font-size: 1.3rem;
-	margin-top: 20px;
+	font-size: 1.0rem;
+    font-weight: 300;
+    padding: auto auto 0 0;
 }
 
 .content {
@@ -88,19 +84,13 @@ body {
 	border: none;
 }
 
-/*
-h3 {
-	display: block;
-    clear: both;
-}
-*/
-
 .legend-title {
+    color: #04724d;
 	padding-top: 100px;
 	padding-bottom: 20px;
-	font-weight: 300;
+	font-weight: 600;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 2.0rem;
 	margin: 0;
 }
 
@@ -120,16 +110,11 @@ h3 {
 	margin-right: auto;
 }
 
-a {
-	color: #dcd09e;
+a, a:hover, a:visited {
+	color: white;
 	text-decoration: none;
 }
 
 a:hover {
-	background-color: #47455c;
-}
-
-a:visited {
-	color: #dcd09e;
-	text-decoration: none;
+	text-decoration: underline;
 }

@@ -1,13 +1,11 @@
 .exercise-table {
-    display: inline-block;
-	width: 70%;
+	display: block;
 	margin: auto auto;
-	float: right;
 	padding: 20px;
 }
 
 .title {
-    color: black;
+    color: #04724d;
     text-align: center;
     font-size: 2rem;
     letter-spacing: 5px;
@@ -55,23 +53,22 @@
 	color: #04724d;
 	margin-left: 20px;
  	background-color: #dcd09e;
-	width: 30px;
-	height: 30px;
-	padding-top: 1px;
-	padding-left: 2px;
+	width: 32px;
+	height: 32px;
+	padding-top: 2px;
+	padding-left: 3px;
     border-radius: 50% 50%;
     display: inline-block;
 }
 
 .ion-stop {
-	font-size: 8px;
-	vertical-align: 
 	color: #04724d;
 	margin-left: 20px;
  	background-color: #dcd09e;
-	width: 30px;
-	height: 30px;
-	padding-top: 1px;
+	width: 32px;
+	height: 32px;
+	padding-top: 2px;
+	padding-left: 1px;
 	border-radius: 50% 50%;
     display: inline-block;
 }

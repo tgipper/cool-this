@@ -14,6 +14,13 @@ var songPlayer = {
 		loop = new buzz.sound(fullPath, { volume: 50 });
 		currentlyPlaying = loopName;
 		loop.play();
+		console.log(currentlyPlaying);
+		
+    // only checks once, need to check for a stop event or check every time the playback changes
+		if (loop.isEnded()) {
+			currentlyPlaying = null;
+			console.log(currentlyPlaying);
+		}
 	},
 	pause: function() {
 		currentlyPlaying = null;

@@ -2,20 +2,19 @@
 	box-sizing: border-box;
 }
 
-body.landing {
-    background-color: white;
-}
-
 body {
-    font-family: "Verdana";
-    color: #dcd09e;
-    min-height: 100%;
+  font-family: "Verdana";
+  color: #dcd09e;
+  min-height: 100%;
 	margin: 0;
 	padding: 0;
 }
 
 .flex {
-	display: flex;
+	display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
 	flex-direction: row;
 }
 
@@ -24,7 +23,10 @@ body {
 }
 
 .flex-hero {
-	display: flex;
+	display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
 	flex-direction: column;
 	flex-wrap: wrap;
 	align-items: flex-end;
@@ -33,11 +35,11 @@ body {
 .hero-content {
 	width: 100%;
 	max-height: 400px;
-    background-image: url(../assets/images/cover-img.png);
+  background-image: url(../assets/images/cover-img.png);
 	position: relative;
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
 	margin: 0px;
 /*	padding-left: 500px;*/
 }
@@ -82,14 +84,16 @@ body {
 }
 
 .navbar-list li {
-    color: white;
+  color: white;
 	text-align: left;
 	border-bottom: 2px solid #dcd09e;
 	height: 70px;
 	font-size: 1.0rem;
-    font-weight: 300;
-    padding: auto auto 0 0;
+  font-weight: 300;
+  padding: auto auto 0 0;
 }
+/* Put space around navbar links rather than list iem
+Might need to make links display: block */
 
 .content {
 	display: flex;
@@ -98,12 +102,12 @@ body {
 }
 
 .intro-title {
-    color: #04724d;
+  color: #04724d;
 	padding-top: 50px;
 	padding-bottom: 20px;
 	font-weight: 600;
-    text-align: center;
-    font-size: 2.0rem;
+  text-align: center;
+  font-size: 2.0rem;
 	margin: 0;
 }
 
@@ -113,12 +117,12 @@ body {
 }
 
 .legend-title {
-    color: #04724d;
+  color: #04724d;
 	padding-top: 120px;
 	padding-bottom: 20px;
 	font-weight: 600;
-    text-align: center;
-    font-size: 2.0rem;
+  text-align: center;
+  font-size: 2.0rem;
 	margin: 0;
 }
 
@@ -127,7 +131,7 @@ body {
 	max-width: 100%;
 	padding-left: 80px;
 	padding-right: 80px;
-    padding-bottom: 300px;
+  padding-bottom: 300px;
 	margin: auto auto;
 
 }
